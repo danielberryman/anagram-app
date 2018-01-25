@@ -1,3 +1,14 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem "puma"
+gem 'activerecord'
+gem 'pg'
+
+gem 'rspec'
+
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'rake'
+gem 'rack'
+gem 'rack-test'
+
+gem 'puma'
