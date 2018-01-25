@@ -1,0 +1,41 @@
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+h1 span {
+	text-transform: uppercase;
+}
+
+body {
+	background-image: url('/img/tiles-01.png');
+	color: red;
+}
+
+form {
+	text-align: center;
+}
+
+label {
+	font-size: 25px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+input {
+	font-size: 30px;
+	height: 30px;
+	margin: 10px;
+	width: 35%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	font-size: 30px;
+	margin: 10px 0;
+	text-align: center;
+}
