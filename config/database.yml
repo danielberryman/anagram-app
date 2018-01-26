@@ -15,5 +15,5 @@ test:
   password: 
 
 production:
-  <<: *default
+  adapter: postgresql
   database: numerology_production
