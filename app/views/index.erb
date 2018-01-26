@@ -1,5 +1,9 @@
 <h1>Welcome to my<br><span>anagram generator</span></h1>
 
+<% if @error.present? %>
+	<p class="error"><%= "#{@error}" %></p>
+<% end %>
+
 <form action="/" method="post" class="form">
 	<label for="word">Enter a three-letter word!</label><br>
 	<input type="text" name="word"><br>
