@@ -10,10 +10,16 @@ class Word < ActiveRecord::Base
 			remaining = letters.select { |l| l != letter }
 			# create a new word by combining the letter + remaining letters
 			# add new word to anagrams array
-			anagrams << letter + remaining.join('')
+			potential_anagram = letter + remaining.join('')
+			if !Word.find_by_text(potential_anagram).nil?
+				anagrams << potential_anagram
+			end
 			# create a new word by combining the letter + the reverse of the remaining letters
 			# add new word to anagrams array
-			anagrams << letter + reverse_letters(remaining).join('')
+			potential_anagram = letter + reverse_letters(remaining).join('')
+			if !Word.find_by_text(potential_anagram).nil?
+				anagrams << potential_anagram
+			end
 		end	
 		# return anagrams array
 		anagrams
