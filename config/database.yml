@@ -5,6 +5,7 @@ development:
   host: localhost
   username: danielberryman
   password: 
+  url: <%= ENV['DATABASE_URL'] %>
     
 test:
   adapter: postgresql
