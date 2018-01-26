@@ -1,4 +1,4 @@
-class Word
+class Word < ActiveRecord::Base
 	def self.find_anagrams(string)
 		# convert word to an array of letters
 		letters = string.split(//)
