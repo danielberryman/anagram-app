@@ -10,7 +10,7 @@ class Word < ActiveRecord::Base
 
 	def self.find_anagrams(string)
 		# convert word to an array of letters
-		letters = string.split(//)
+		letters = letters.split(//)
 		# create an array to store our find_anagrams
 		anagrams = []
 		# loop through each letter in letters
