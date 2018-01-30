@@ -65,7 +65,7 @@ class Word < ActiveRecord::Base
  	end
 
  	def self.valid_input?(input)
- 		if input.length > 10
+ 		if input.length > 3
  			raise Exception.new("Word must be less than or equal to 3 characters.")
  		end	
  	end
