@@ -13,6 +13,6 @@ get '/words/:id' do
 end
 
 post '/words' do
-	word = Word.create(text: params[:text])
+	word = Word.create(text: params[:word])
 	redirect "/words/#{word.id}"
 end
