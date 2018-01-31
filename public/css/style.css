@@ -1,6 +1,7 @@
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
+	margin: 50px 0;
 	text-align: center;
 }
 
@@ -10,7 +11,7 @@ h1 span {
 
 body {
 	background-image: url('/img/tiles-01.png');
-	color: red;
+	color: #3498db;
 }
 
 form {
@@ -25,13 +26,13 @@ label {
 
 input {
 	font-size: 30px;
-	height: 30px;
 	margin: 10px;
-	width: 35%;
+	width: 300px;
 }
 
 ul {
 	list-style: none;
+	padding: 0;
 }
 
 li {
@@ -39,3 +40,55 @@ li {
 	margin: 10px 0;
 	text-align: center;
 }
+
+.back-button {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.new-button {
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-style: italic;
+}
+
+.edit-new-back-button {
+	margin-top: 10px;
+}
+
+.btn {  
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 300px;
+}
+
+table {
+	font-size: 25px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+td {
+/*	font-size: 20px;*/
+	width: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+

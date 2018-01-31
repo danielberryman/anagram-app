@@ -5,7 +5,12 @@
 <% end %>
 
 <form action="/" method="post" class="form">
-	<label for="word">Enter a three-letter word!</label><br>
-	<input type="text" name="word"><br>
+	<label for="word">Enter a word!</label><br>
+	<input type="text" name="word" required><br>
 	<input type="submit" class="btn">
 </form>
+<div class="new-button">
+	<p>See full word list here!</p>
+	<a href="/words"><button type="submit" class="btn">Word List</button></a>
+</div>
+

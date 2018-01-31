@@ -1,10 +1,15 @@
-<h1>Words</h1>
+<h1>Word List</h1>
+<div class="new-button">
+	<p>Don't see your word? Enter a new one!</p>
+	<a href="/words/new"><button type="submit" class="btn">New</button></a>
+	<div>
+		<a href="/"><button type="submit" class="btn">Back to Generator</button></a>
+	</div>
+</div>
 <table class="table table-striped">
 	<thead>
 		<th>Text</th>
 		<th>Letters</th>
-		<th>Edit</th>
-		<th>Delete</th>
 	</thead>
 	<tbody>
 		<% @words.each do |word| %>

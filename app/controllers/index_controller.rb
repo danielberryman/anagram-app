@@ -13,10 +13,10 @@ get '/anagrams/:word' do
 post '/' do
   @word = params[:word]
   begin
- 	Word.valid_input?(@word)
- 	redirect "/anagrams/#{@word}"
+ 	  Word.valid_input?(@word)
+ 	  redirect "/anagrams/#{@word}"
   rescue Exception => error
- 	@error = error.message
- 	erb :index
+ 	  @error = error.message
+ 	  erb :index
   end
 end

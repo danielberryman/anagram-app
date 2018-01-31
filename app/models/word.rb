@@ -1,6 +1,5 @@
 class Word < ActiveRecord::Base
-	
-	# before_create :add_letters
+
 	before_save :add_letters
 
 	def add_letters
@@ -66,8 +65,9 @@ class Word < ActiveRecord::Base
  	end
 
  	def self.valid_input?(input)
- 		if input.length > 3
+ 		if input.length > 15
  			raise Exception.new("Word must be less than or equal to 3 characters.")
  		end	
  	end
+
 end
