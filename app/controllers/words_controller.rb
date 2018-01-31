@@ -1,5 +1,5 @@
 get '/words' do
-	@words = Word.all
+  	@words = Word.all
 	erb :"/words/index"
 end
 
