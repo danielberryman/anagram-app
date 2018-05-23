@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.4'
 
 gem 'activerecord'
-gem 'pg', '~> 0.11'
+gem 'pg', '~> 0.1'
 
 gem 'rspec'
 

@@ -57,7 +57,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  pg (~> 0.11)
+  pg (~> 0.1)
   puma
   rack
   rack-test
